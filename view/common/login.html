@@ -1,0 +1,36 @@
+<section class="content-header" >
+  <!-- <h3><strong>Login</strong>page</h3> -->
+</section>
+<section class="content">
+    <div class="row">
+      <form name="loginForm" ng-submit="login()">
+        <div class="col-sm-4 col-sm-offset-4">
+          <div class="box box-primary">
+            <div class="login-box-body">
+              <h1 class="login-box-msg">log in</h1>
+                <div class="form-group has-feedback">
+                  <label class="">Mobile*</label>
+                  <input type="text" class="form-control" ng-model="user.contactNbr" placeholder="Mobile">
+                  <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <label class="">password*</label>
+                  <input type="password" class="form-control" ng-model="user.password" placeholder="Password">
+                  <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                  <label clsss="col-md-6">
+                    <input type="checkbox"> Remember Me
+                  </label>
+                  <a href="" class="pull-right a-bold" ui-sref="forgotPassword">Forgot Password</a>
+                </div>
+                <div class="col-xm-1">
+                  <button type="submit" class="btn btn-primary btn-block btn-flat" ng-click="login()" >Login</button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+</section>

@@ -1,0 +1,11 @@
+<div class="modal-info mapview">
+    <div class="modal-header">
+      <h3 class="modal-title">Client Location</h3>
+      <i class="fa fa-fw fa-close fa-2x" ng-click="cancel()"></i>
+    </div>
+    <div class="modal-body">
+      <ng-map center="{{location}}" zoom="20">
+        <marker position="{{location}}"></marker>
+      </ng-map>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<section class="content-header m-b-40">
+    <h1>
+        <strong>Schemes</strong>
+    </h1> 
+</section>
+<section class="content" ng-init="getSchemes()">
+    <div class="col-xs-12">
+        <div class="box box-success">
+            <div class="box-header with-border">
+                <h3 class="box-title">ALL Plans</h3>
+            </div>
+            <div class="box-body ">
+                    
+                <!-- Small boxes (Stat box) -->
+                <div class="row">
+                    <div class="col-lg-3 col-xs-6" ng-repeat="scheme in schemeList">
+                    <!-- small box -->
+                    <div class="small-box" ng-style="{'background-color': getBgColor($index)}">
+                        <div class="inner">
+                        <p>{{scheme.description}}</p>
+            
+                        <p><i class="fa fa-inr"></i> {{scheme.price}}/Year</p>
+                        </div>
+                        <div class="icon">
+                        <i class="fa fa-edit"></i>
+                        </div>
+                        <a href="" ui-sref="schemeDetails({schemeDetails : scheme})"  class="small-box-footer" >More info <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!-- Main row -->
+                           
+            </div>
+        </div>
+    </div>     
+</section>
+
+

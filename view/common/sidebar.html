@@ -1,0 +1,115 @@
+<aside class="main-sidebar">
+  <!-- sidebar: style can be found in sidebar.less -->
+  <section class="sidebar">
+    <!-- Sidebar user panel -->
+    <!-- <div class="user-panel">
+      <div class="pull-left">
+        <p class="c-w">CallCenter Service</p>
+        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+      </div>
+    </div> -->
+    <!-- search form -->
+    <!-- <form action="#" method="get" class="sidebar-form">
+      <div class="input-group">
+        <input type="text" name="q" class="form-control" placeholder="Search...">
+        <span class="input-group-btn">
+              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+              </button>
+            </span>
+      </div>
+    </form> -->
+    <!-- /.search form -->
+    <!-- sidebar menu: : style can be found in sidebar.less -->
+    <ul class="sidebar-menu" data-widget="tree">
+      <li class="header">MAIN NAVIGATION</li>
+      <li class="treeview" ng-class="{'active':stateName='dashboard'}">
+        <a href="" ui-sref="dashboard">
+          <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+          <!-- <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span> -->
+        </a>
+      </li>
+
+      <li class="treeview " ng-class="{'active':stateName=='orders'}">
+        <a href="" ui-sref="orders({ status :'ALL'})">
+          <i class="fa fa-edit"></i> <span>Orders</span>
+          <!-- <span class="pull-right-container">
+            <small class="label pull-right bg-green">new</small>
+          </span> -->
+        </a>
+      </li>
+      <!-- <li class="treeview" ng-class="{'active':stateName=='tickets'}">
+          <a href="" ui-sref="ticketList({ status :'ALL'})">
+            <i class="fa fa-edit"></i> <span>Tickets</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-green">new</small>
+            </span>
+          </a>
+        </li> -->
+
+        
+
+        <li class="treeview menu-open" ng-class="{'active':stateName=='workshopListByStatus'}">
+          <a href="" >
+            <i class="fa fa-dashboard"></i> <span>Workshop Management</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="" ui-sref="workshopListByStatus({status:'pending'})"><i class="fa fa-circle-o"></i>New On-boarding</a></li>
+            <li class="active"><a href="" ui-sref="workshopListByStatus({status:'onhold'})"><i class="fa fa-circle-o"></i> Workshop On-hold</a></li>
+            <li class="active"><a href="" ui-sref="workshopListByStatus({status:'completed'})"><i class="fa fa-circle-o"></i> Authorized workshop</a></li>
+            <li class="active"><a href="" ui-sref="workshopListByStatus({status:'all'})"><i class="fa fa-circle-o"></i> All</a></li>
+          </ul>
+        </li>
+
+
+
+
+
+      <li class="treeview" ng-class="{'active':stateName == 'users'}" >
+        <a href="" ui-sref="users">
+          <i class="fa fa-users"></i> <span>Users</span>
+        </a>
+      </li>
+      <li class="treeview" ng-class="{'active':stateName=='services'}">
+        <a href="" ui-sref="services">
+          <i class="fa fa-tasks"></i> <span>Services</span>
+        </a>
+      </li>
+      <li class="treeview" ng-class="{'active':stateName=='schemes'}">
+          <a href="" ui-sref="schemes">
+            <i class="fa fa-file"></i> <span>Schemes</span>
+          </a>
+        </li>
+      <li class="treeview" ng-class="{'active':stateName == 'referral'}" >
+        <a href="" ui-sref="referral">
+          <i class="fa fa-users"></i> <span>Referral</span>
+        </a>
+      </li>
+      <!-- <li class="treeview" ng-class="{'active':stateName=='serviceEngineers'}">
+        <a href="" ui-sref="serviceEngineers">
+          <i class="fa fa-car"></i> <span>Service Engineers</span>
+        </a>
+      </li> -->
+      <li class="treeview" ng-class="{'active':stateName=='office'}">
+          <a href="" ui-sref="office">
+            <i class="fa fa-bank"></i> <span>Office</span>
+          </a>
+        </li>
+      <li class="treeview" ng-class="{'active':stateName=='changePassword'}">
+          <a href="" ui-sref="changePassword">
+            <i class="fa fa-key"></i> <span>Change Password</span>
+          </a>
+        </li>
+        <li class="treeview" >
+          <a href="" ng-click="signOut()">
+            <i class="fa fa-sign-out"></i> <span>Sign Out</span>
+          </a>
+        </li>
+    </ul>
+  </section>
+  <!-- /.sidebar -->
+</aside>

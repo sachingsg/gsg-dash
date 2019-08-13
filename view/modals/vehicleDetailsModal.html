@@ -1,0 +1,82 @@
+<div class="modal-info">
+        <form class="form-horizontal" name="vehicleDetailForm">
+            <div class="modal-header">
+                <h3 class="modal-title">Vehicle Details</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                  <label class="text-left control-label col-sm-4">Registration Number:</label>
+                  <div class="col-sm-8">
+                      <input type="text" class="form-control"  ng-model="vehicleData.registrationNumber" readonly>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <label class="text-left control-label col-sm-4">Make:</label>
+                  <div class="col-sm-8">
+                      <input type="text" class="form-control"  ng-model="vehicleData.vehicle.make" readonly>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <label class="text-left control-label col-sm-4">Models:</label>
+                  <div class="col-sm-8">
+                      <input type="text" class="form-control"  ng-model="vehicleData.vehicle.models" readonly>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <label class="text-left control-label col-sm-4">type:</label>
+                  <div class="col-sm-8">
+                      <input type="text" class="form-control"  ng-model="vehicleData.vehicle.type" readonly>
+                  </div>
+                </div>
+                <div class="row">
+                  <label class="text-left control-label col-sm-4">subType:</label>
+                  <div class="col-sm-8">
+                      <input type="text" class="form-control"  ng-model="vehicleData.vehicle.subType" readonly>
+                  </div>
+                </div>
+                <div class="row">
+                  <label class="text-left control-label col-sm-4">wheels:</label>
+                  <div class="col-sm-8">
+                      <input type="text" class="form-control"  ng-model="vehicleData.vehicle.wheels" readonly>
+                  </div>
+                </div>
+                <div class="row">
+                  <label class="text-left control-label col-sm-4">variant:</label>
+                  <div class="col-sm-8">
+                      <input type="text" class="form-control"  ng-model="vehicleData.variant" readonly>
+                  </div>
+                </div>
+                <div class="row">
+                  <label class="text-left control-label col-sm-4">Manufacture Year:</label>
+                  <div class="col-sm-8">
+                      <input type="text" class="form-control"  ng-model="vehicleData.mfgYear" readonly>
+                  </div>
+                </div>
+                <div class="row">
+                  <label class="text-left control-label col-sm-4">cubicCapacity:</label>
+                  <div class="col-sm-8">
+                      <input type="text" class="form-control"  ng-model="vehicleData.cubicCapacity" readonly>
+                  </div>
+                </div>
+                <div class="row">
+                  <label class="text-left control-label col-sm-4">insuranceType:</label>
+                  <div class="col-sm-8">
+                      <input type="text" class="form-control"  ng-model="vehicleData.insuranceType" readonly>
+                  </div>
+                </div>
+                <div class="row">
+                  <label class="text-left control-label col-sm-4">expiryDate:</label>
+                  <div class="col-sm-8">
+                      <input type="text" class="form-control"  ng-model="vehicleData.expiryDate" readonly>
+                  </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                    <button class="btn btn-warning pull-left" type="button" ng-click="cancel()">Back</button>
+            </div>
+        </form>
+    </div>

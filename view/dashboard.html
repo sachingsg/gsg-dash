@@ -1,0 +1,50 @@
+<!-- <div class="content-wrapper"> -->
+<!-- Content Header (Page header) -->
+<section class="content-header" ng-init="refresh()">
+  <h1>
+        Dashboard
+      </h1>
+</section>
+
+<!-- Main content -->
+<section class="content" ng-init="getOrdersCount()">
+  <!-- Small boxes (Stat box) -->
+  <div class="row">
+    <div class="col-lg-3 col-xs-6" ng-repeat="count in counts">
+      <!-- small box -->
+      <div class="small-box " ng-style="{'background-color': getBgColor($index)}">
+        <div class="inner">
+          <h3>{{count.count}}</h3>
+
+          <p> {{count.category =="WIP" ? "Work In Progress" : count.category}} Orders</p>
+        </div>
+        <div class="icon">
+          <i class="fa fa-edit"></i>
+        </div>
+        <a href="" ui-sref="orders({status:count.category})" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    <!-- ./col -->
+    </div>
+    </section>
+
+<section class="content" ng-init="getUserCount()">
+  <div class="row">
+    <div class="col-lg-3 col-xs-6" ng-repeat="count in userCount">
+      <!-- small box -->
+      <div class="small-box " ng-style="{'background-color': getBgColor($index)}">
+        <div class="inner">
+          <h3>{{count.count}}</h3>
+
+          <p>{{count.category}}</p>
+        </div>
+        <div class="icon">
+          <i class="fa fa-car"></i>
+        </div>
+        <a href="" ui-sref="userListByRole({role:count.category})" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    <!-- ./col -->
+    
+  </div>
+</section>
